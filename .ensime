@@ -1,0 +1,42 @@
+;; If your project contains a lot of files, it is advisable to enable (:disable-source-load-on-startup t)
+;; Otherwise Ensime might incur a massive lag at startup time
+;; See more information about that at http://aemoncannon.github.com/ensime/index.html
+
+(
+  :subprojects (
+    (
+      :name "noturing"
+      :module-name "noturing"
+      :depends-on-modules (
+      
+      )
+      :package "noturing"
+      :version "0.0.1"
+      :compile-deps (
+        "/home/aakarsh/.sbt/boot/scala-2.10.3/lib/scala-library.jar"
+      )
+      :runtime-deps (
+        "/home/aakarsh/.sbt/boot/scala-2.10.3/lib/scala-library.jar"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/classes"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/classes"
+      )
+      :test-deps (
+        "/home/aakarsh/.sbt/boot/scala-2.10.3/lib/scala-library.jar"
+        "/home/aakarsh/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-2.1.7.jar"
+        "/home/aakarsh/.sbt/boot/scala-2.10.3/lib/scala-reflect.jar"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/classes"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/test-classes"
+      )
+      :source-roots (
+        "/home/aakarsh/src/scala/noturing/src/main/scala"
+        "/home/aakarsh/src/scala/noturing/src/main/java"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/src_managed/main"
+        "/home/aakarsh/src/scala/noturing/src/test/scala"
+        "/home/aakarsh/src/scala/noturing/src/test/java"
+        "/home/aakarsh/src/scala/noturing/target/scala-2.10/src_managed/test"
+      )
+      :target "/home/aakarsh/src/scala/noturing/target/scala-2.10/classes"
+      :test-target "/home/aakarsh/src/scala/noturing/target/scala-2.10/test-classes"
+    )
+  )
+)
